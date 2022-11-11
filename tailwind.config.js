@@ -9,7 +9,12 @@ module.exports = {
       lg: "1024px",
       xl: "1200px",
     },
-    extend: {},
+    extend: {
+      colors: {
+        purple: "#A02279",
+        dark: "#1D1D1E",
+      },
+    },
   },
   plugins: [],
 };

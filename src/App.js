@@ -1,9 +1,24 @@
+import { useState } from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Navbar from "./components/layout/Navbar";
+import Sidebar from "./components/layout/Sidebar";
+import Footer from "./components/Footer";
+import Home from "./pages/Home";
+import NFT from "./pages/NFT";
 
 function App() {
-  return (
-    <div className="App">
+  const [toggleMenu, setToggleMenu] = useState(false);
 
-    </div>
+  return (
+    <Router>
+      <Navbar setToggleMenu={setToggleMenu} />
+      <Sidebar toggleMenu={toggleMenu} setToggleMenu={setToggleMenu} />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/nfts" element={<NFT />} />
+      </Routes>
+      <Footer />
+    </Router>
   );
 }
 
