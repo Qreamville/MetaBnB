@@ -1,3 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Rose:wght@300;400;500;600;700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  body {
+    font-family: "Red Rose", cursive;
+  }
+
+  .nav {
+    @apply flex items-center justify-between mt-6;
+  }
+
+  .nav-brand {
+    @apply w-40 md:w-52 ml-1;
+  }
+
+  .nav-link {
+    @apply md:flex items-center gap-x-3 hidden;
+  }
+
+  .nav-link .active {
+    @apply border-b-2  border-purple;
+  }
+
+  .nav-link li {
+    @apply cursor-pointer hover:border-b-2 border-purple;
+  }
+
+  .nav-sidebar {
+    @apply fixed top-0 bottom-0 bg-purple w-full md:hidden pt-7 transition-all duration-500;
+  }
+
+  .nav-sidebar__link {
+    @apply flex flex-col justify-center items-center gap-y-3;
+  }
+
+  .nav-sidebar__link .active {
+    @apply border-b-2;
+  }
+
+  .nav-sidebar__link li {
+    @apply text-white;
+  }
+
+  .nav-btn {
+    @apply mr-1 text-white hidden md:block rounded-xl;
+    background: linear-gradient(90deg, #a02279 11.45%, #a02279 11.45%);
+    height: 48px;
+    width: 170px;
+  }
+
+  .nav-menu {
+    @apply block md:hidden;
+  }
+  .footer {
+    @apply bg-dark py-16;
+  }
+  .footer h4 {
+    @apply font-bold text-lg;
+  }
+
+  .footer ul {
+    @apply text-center;
+  }
+
+  .footer ul li {
+    @apply cursor-pointer font-normal text-[#f1f3f9];
+  }
+
+  .footer > div {
+    @apply grid grid-cols-1 md:grid-cols-4 sm:grid-cols-2  place-items-center sm:place-items-start gap-y-12;
+  }
+  .footer-heading {
+    @apply flex flex-col gap-y-6 justify-center items-center sm:items-start;
+  }
+  .footer-heading__socials {
+    @apply flex gap-x-4;
+  }
+}
