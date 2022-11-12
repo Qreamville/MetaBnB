@@ -28,4 +28,30 @@
   .brand > div {
     @apply flex items-center justify-center flex-col md:justify-between  md:flex-row gap-y-4;
   }
+
+  .discover {
+    @apply container mx-auto flex py-16 items-center gap-x-4 flex-col md:flex-row gap-y-6 text-center md:text-start;
+  }
+
+  .discover-heading {
+    @apply font-bold;
+    background: linear-gradient(124.4deg, #ffffff 10.8%, #ffffff 87.34%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .discover-text {
+    @apply text-lg my-6;
+    background: linear-gradient(124.4deg, #ffffff 10.8%, #ffffff 87.34%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .discover-btn {
+    @apply text-purple;
+    background: linear-gradient(124.4deg, #ffffff 10.8%, #ffffff 87.34%);
+    border-radius: 8px;
+    height: 48px;
+    width: 156px;
+  }
 }
