@@ -23,6 +23,7 @@ const Sidebar = ({ toggleMenu, setToggleMenu }) => {
             </li>
           )
         )}
+        <button className="nav-sidebar__btn">Connect Wallet</button>
       </ul>
     </aside>
   );

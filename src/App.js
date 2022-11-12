@@ -3,8 +3,8 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "./components/layout/Navbar";
 import Sidebar from "./components/layout/Sidebar";
 import Footer from "./components/Footer";
-import Home from "./pages/Home";
-import NFT from "./pages/NFT";
+import Home from "./pages/home/Home";
+import NFT from "./pages/nft/NFT";
 
 function App() {
   const [toggleMenu, setToggleMenu] = useState(false);

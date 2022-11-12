@@ -1,0 +1,31 @@
+@tailwind components;
+
+@layer components {
+  .hero {
+    @apply container mx-auto flex flex-col-reverse items-center md:flex-row my-20 text-[#434343] gap-x-9 justify-center;
+  }
+  .hero h2 {
+    @apply font-normal text-4xl md:text-5xl mt-8 md:mt-0;
+  }
+  .hero h2 span {
+    @apply text-purple;
+  }
+  .hero p {
+    @apply text-base md:text-xl font-normal text-[#434343] mb-8;
+  }
+  .hero form {
+    @apply flex items-center;
+  }
+  .hero form input {
+    @apply h-12 border border-[#A3A3A3] pl-2 w-56 md:w-full outline-none;
+  }
+  .hero form button {
+    @apply h-12 bg-purple text-white w-20 md:w-52;
+  }
+  .brand {
+    @apply bg-purple py-6;
+  }
+  .brand > div {
+    @apply flex items-center justify-center flex-col md:justify-between  md:flex-row gap-y-4;
+  }
+}
