@@ -3,7 +3,7 @@ import { BiMenu } from "react-icons/bi";
 import { Link, NavLink } from "react-router-dom";
 import { navLinks } from "../../utils/link";
 
-const Navbar = ({ setToggleMenu }) => {
+const Navbar = ({ setToggleMenu, setToggleModal }) => {
   return (
     <nav className="nav container mx-auto">
       <Link to="/" className="nav-brand">
@@ -22,7 +22,9 @@ const Navbar = ({ setToggleMenu }) => {
           )
         )}
       </ul>
-      <button className="nav-btn">Connect Wallet</button>
+      <button className="nav-btn" onClick={() => setToggleModal(true)}>
+        Connect Wallet
+      </button>
       <button className="nav-menu">
         <BiMenu
           size={24}

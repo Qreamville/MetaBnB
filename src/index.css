@@ -18,7 +18,7 @@
   }
 
   .nav-link {
-    @apply md:flex items-center gap-x-3 hidden;
+    @apply md:flex items-center gap-x-[48px] hidden;
   }
 
   .nav-link .active {
@@ -26,7 +26,7 @@
   }
 
   .nav-link li {
-    @apply cursor-pointer hover:border-b-2 border-purple;
+    @apply cursor-pointer hover:border-b-2 border-purple text-[20px];
   }
 
   .nav-sidebar {
@@ -42,7 +42,7 @@
   }
 
   .nav-sidebar__link li {
-    @apply text-white;
+    @apply text-white text-[20px];
   }
   .nav-sidebar__btn {
     @apply bg-white text-purple opacity-95 hover:opacity-100;
@@ -68,7 +68,7 @@
   }
 
   .footer ul {
-    @apply text-center;
+    @apply text-center sm:text-start;
   }
 
   .footer ul li {
@@ -84,4 +84,14 @@
   .footer-heading__socials {
     @apply flex gap-x-4;
   }
+  .modal {
+    @apply top-0 bottom-0 w-full grid place-items-center;
+    background: rgba(64, 64, 64, 0.3);
+  }
+  .wallet {
+    @apply hover:border-[#CFD8DC] hover:bg-[#F8F9FA] border cursor-pointer py-2 rounded-xl px-2;
+  }
+}
+.css-ua0shy-MuiPaper-root-MuiCard-root {
+  border-radius: 15px !important;
 }

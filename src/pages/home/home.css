@@ -2,7 +2,7 @@
 
 @layer components {
   .hero {
-    @apply container mx-auto flex flex-col-reverse items-center md:flex-row my-20 text-[#434343] gap-x-9 justify-center;
+    @apply container mx-auto flex flex-col-reverse items-center md:flex-row my-20 text-[#434343] gap-x-16 justify-center;
   }
   .hero h2 {
     @apply font-normal text-4xl md:text-5xl mt-8 md:mt-0;

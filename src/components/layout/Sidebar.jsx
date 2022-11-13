@@ -3,9 +3,16 @@ import { Link, NavLink } from "react-router-dom";
 import { navLinks } from "../../utils/link";
 import { BiX } from "react-icons/bi";
 
-const Sidebar = ({ toggleMenu, setToggleMenu }) => {
+const Sidebar = ({ toggleMenu, setToggleMenu, setToggleModal }) => {
+  const onclick = () => {
+    setToggleMenu(false);
+    setToggleModal(true);
+  };
+
   return (
-    <aside className={`nav-sidebar ${toggleMenu ? "right-0" : "-right-full"}`}>
+    <aside
+      className={`nav-sidebar z-50 ${toggleMenu ? "right-0" : "-right-full"}`}
+    >
       <BiX
         size={28}
         className="ml-auto text-white cursor-pointer mr-6"
@@ -23,7 +30,9 @@ const Sidebar = ({ toggleMenu, setToggleMenu }) => {
             </li>
           )
         )}
-        <button className="nav-sidebar__btn">Connect Wallet</button>
+        <button className="nav-sidebar__btn" onClick={onclick}>
+          Connect Wallet
+        </button>
       </ul>
     </aside>
   );

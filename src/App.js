@@ -5,14 +5,21 @@ import Sidebar from "./components/layout/Sidebar";
 import Footer from "./components/Footer";
 import Home from "./pages/home/Home";
 import NFT from "./pages/nft/NFT";
+import Modal from "./components/Modal";
 
 function App() {
   const [toggleMenu, setToggleMenu] = useState(false);
+  const [toggleModal, setToggleModal] = useState(false);
 
   return (
     <Router>
-      <Navbar setToggleMenu={setToggleMenu} />
-      <Sidebar toggleMenu={toggleMenu} setToggleMenu={setToggleMenu} />
+      {toggleModal && <Modal setToggleModal={setToggleModal} />}
+      <Navbar setToggleMenu={setToggleMenu} setToggleModal={setToggleModal} />
+      <Sidebar
+        toggleMenu={toggleMenu}
+        setToggleMenu={setToggleMenu}
+        setToggleModal={setToggleModal}
+      />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/nfts" element={<NFT />} />
