@@ -5,7 +5,7 @@ import { showcaseData } from "../../../utils/link";
 
 const Showcase = () => {
   return (
-    <section className="container mx-auto my-14">
+    <section className="container mx-auto my-14 px-2 xs:px-0">
       <h2 className="text-2xl md:text-4xl sm:text-5xl text-center my-10 font-bold">
         Inspiration for your next adventure
       </h2>

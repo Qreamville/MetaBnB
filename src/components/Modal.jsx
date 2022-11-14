@@ -6,7 +6,7 @@ import walletConnect from "../assets/image/image 69(1).png";
 const Modal = ({ setToggleModal }) => {
   return (
     <div className="modal fixed">
-      <div className="bg-white h-[280px] w-[320px] sm:w-[500px]  rounded-lg">
+      <div className="bg-white h-[280px] w-[300px] sm:w-[500px] xs:w-[320px]  rounded-lg">
         <div className="flex items-center justify-between pb-[20px] border-b p-6">
           <h4 className="text-2xl text-[#333] font-bold">Connect Wallet</h4>
           <BiX

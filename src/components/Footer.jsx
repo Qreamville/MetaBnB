@@ -22,19 +22,19 @@ const Footer = () => {
           </div>
         </div>
         <ul className="footer-community text-white">
-          <h4>Community</h4>
+          <li className="font-bold text-lg">Community</li>
           {communityLinks.map((link) => (
             <li key={link.id}>{link.name}</li>
           ))}
         </ul>
         <ul className="footer-places text-white">
-          <h4>Places</h4>
+          <li className="font-bold text-lg">Places</li>
           {placesLinks.map((link) => (
             <li key={link.id}>{link.name}</li>
           ))}
         </ul>
         <ul className="footer-aboutUs text-white">
-          <h4>About us</h4>
+          <li className="font-bold text-lg">About us</li>
           {aboutUsLinks.map((link) => (
             <li key={link.id}>{link.name}</li>
           ))}

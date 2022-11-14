@@ -63,15 +63,12 @@
   .footer {
     @apply bg-dark py-16;
   }
-  .footer h4 {
-    @apply font-bold text-lg;
-  }
 
   .footer ul {
     @apply text-center sm:text-start;
   }
 
-  .footer ul li {
+  .footer ul li:not(:first-child) {
     @apply cursor-pointer font-normal text-[#f1f3f9];
   }
 

@@ -7,9 +7,9 @@ const Brand = () => {
   return (
     <section className="brand">
       <div className="container mx-auto">
-        <img src={mbToken} alt="mbToken" />
-        <img src={metamask} alt="Metamask" />
-        <img src={opensea} alt="Opensea" />
+        <img src={mbToken} alt="mbToken" className="w-[190px] h-auto" />
+        <img src={metamask} alt="Metamask" className="w-[190px] h-auto" />
+        <img src={opensea} alt="Opensea" className="w-[190px] h-auto" />
       </div>
     </section>
   );

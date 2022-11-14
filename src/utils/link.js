@@ -17,8 +17,8 @@ import showcase16 from "../assets/image/Frame 151(15).png";
 
 export const navLinks = [
   { id: 1, name: "Home", to: "/", dummy: false },
-  { id: 2, name: "Place to stay", to: "/", dummy: true },
-  { id: 3, name: "NFTs", to: "/nfts", dummy: false },
+  { id: 2, name: "Place to stay", to: "/place-to-stay", dummy: false },
+  { id: 3, name: "NFTs", to: "/", dummy: true },
   { id: 4, name: "Community", to: "/", dummy: true },
 ];
 

@@ -16,7 +16,7 @@ const NFT = () => {
   ];
 
   return (
-    <main className="container mx-auto mt-[128px]">
+    <main className="container mx-auto mt-[128px] xs:px-0 px-2">
       <section className="overflow-auto">
         <div className="flex flex-row gap-x-[48px] items-center">
           {types.map((items) => (

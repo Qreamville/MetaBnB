@@ -25,13 +25,13 @@ const Navbar = ({ setToggleMenu, setToggleModal }) => {
       <button className="nav-btn" onClick={() => setToggleModal(true)}>
         Connect Wallet
       </button>
-      <button className="nav-menu">
+      <div className="nav-menu">
         <BiMenu
           size={24}
           onClick={() => setToggleMenu(true)}
           className="mr-3"
         />
-      </button>
+      </div>
     </nav>
   );
 };

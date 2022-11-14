@@ -19,7 +19,7 @@ const Home = () => {
           <button>Search</button>
         </form>
       </div>
-      <div className="flex-1">
+      <div className="flex-1 w-[304px] sm:w-[459px] h-auto">
         <img src={Hero} alt="hero" className="w-full" />
       </div>
     </header>

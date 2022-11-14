@@ -22,7 +22,7 @@ function App() {
       />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/nfts" element={<NFT />} />
+        <Route path="/place-to-stay" element={<NFT />} />
       </Routes>
       <Footer />
     </Router>
