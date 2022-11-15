@@ -20,6 +20,7 @@
     @apply h-12 border border-[#A3A3A3] pl-2 w-56 md:w-full outline-none;
   }
   .hero form button {
+    border-radius: 0px 8px 8px 0px;
     @apply h-12 bg-purple text-white w-20 md:w-52;
   }
   .brand {
